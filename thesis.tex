@@ -1,0 +1,154 @@
+\documentclass[12pt,twoside,openany]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx} % Sets font to Times.
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage{graphics}
+\usepackage{gensymb}
+\usepackage{textcomp}
+\usepackage{epsfig}
+\usepackage{datetime}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage{eucal}
+\usepackage{siunitx}
+\usepackage{titlesec}
+\usepackage[english]{babel}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage[perpage]{footmisc}
+\usepackage[document]{ragged2e}
+\usepackage[square, numbers, sort&compress]{natbib}
+\bibliographystyle{unsrtnat} % bibliography style
+%\usepackage[nottoc]{tocbibind} %Adds references to table of contents
+\usepackage[titletoc]{appendix} %Adds table of contents entry for Appendices
+\usepackage{ifthen}
+\usepackage{ifpdf}
+\usepackage{subfigure}
+\usepackage{afterpage} % Allows the addition of blank pages
+	\newcommand\blankpagenonumber{% 
+		\null
+		\thispagestyle{empty}%
+		\addtocounter{page}{-1}%
+		\newpage}
+\usepackage[ pdftex, plainpages = false, pdfpagelabels, 
+pdfpagelayout = useoutlines,
+bookmarks,
+bookmarksopen = true,
+bookmarksnumbered = true,
+breaklinks = true,
+linktocpage,
+pagebackref,
+colorlinks = true,
+linkcolor = black,
+urlcolor  = black,
+citecolor = black,
+anchorcolor = black,
+hyperindex = true,
+hyperfigures
+]{hyperref}
+\usepackage[a4paper,width=150mm,top=20mm,bottom=20mm,bindingoffset=40mm]{geometry} %Specifies the page geometry
+\graphicspath{Figures/} 
+
+\titleformat{\chapter}[display]   
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge} %Normal title formatting, required for next line   
+\titlespacing*{\chapter}{0pt}{0pt}{40pt} %alters the white space before chapters. Change second value.
+
+\pdfinfo { /Title  (Nanomechanical Characterisation of Diamond-Like Carbon Coatings for Tribological Performance)
+	/Author (Samuel James McMaster s.j.mcmaster@leeds.ac.uk)
+	/Subject (My PhD)
+	/Keywords (PhD, Thesis, Diamond-like Carbon)}
+
+%Sets the number of sectioning levels that appear in the document
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+\newcommand*{\printdate}{%
+	\ifcase \month\or January\or February\or March\or April\or May\or June\or July\or
+	August\or September\or October\or November\or December\fi \space \number\year}
+
+\begin{document}
+\linespread{1.25}
+\input{Preamble/Title-page/title-page}
+
+%\afterpage{\blankpagenonumber}
+	
+%\frontmatter
+\pagestyle{plain}
+\pagenumbering{roman}
+
+\include{Preamble/Publication-statement/publication-statement}
+\addcontentsline{toc}{chapter}{Publication Statement}
+
+\include{Preamble/Contributing-papers/contributing-papers}
+\addcontentsline{toc}{chapter}{Papers Contributing to this Thesis}
+
+\include{Preamble/Dedication/dedication}
+\addcontentsline{toc}{chapter}{Dedication}
+
+\include{Preamble/Acknowledgement/acknowledgement}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+\phantomsection
+\include{Preamble/Abstract/abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+\phantomsection
+%\cleardoublepage
+\include{Preamble/Abbreviations/abbreviations}
+\addcontentsline{toc}{chapter}{List of Abbreviations}
+
+\phantomsection
+%\cleardoublepage
+\tableofcontents
+\addcontentsline{toc}{chapter}{Table of Contents}
+
+\phantomsection
+%\cleardoublepage
+\begin{flushleft}
+	\listoffigures
+	\addcontentsline{toc}{chapter}{List of Figures}
+\end{flushleft}
+
+\phantomsection
+%\cleardoublepage
+\begin{flushleft}
+	\listoftables
+	\addcontentsline{toc}{chapter}{List of Tables}
+\end{flushleft}
+
+
+\let\cleardoublepage\clearpage %Stops the creation of unnecessary blank pages
+
+\mainmatter
+\pagestyle{plain}
+\pagenumbering{arabic}
+
+\include{Chapters/Introduction/introduction}
+
+\include{Chapters/Literature-Review/Literature-Review}
+
+\include{Chapters/FutureWorks/futureworks}
+
+
+%\pagenumbering{Roman}
+\renewcommand{\bibname}{References} 
+\bibliography{References/library} % References file
+\addcontentsline{toc}{chapter}{References} % Adds References to contents page
+
+\phantomsection
+\cleardoublepage
+\begin{appendices}
+	\pagenumbering{alph}
+	\include{Appendices/appendixA}
+	\include{Appendices/appendixB}
+\end{appendices}
+
+%\addcontentsline{toc}{chapter}{Appendices}
+
+	
+\end{document}
