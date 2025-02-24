@@ -1,18 +1,72 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: unsrtnat.bst
+Reallocating 'name_of_file' (item size: 1) to 57 items.
 A level-1 auxiliary file: Preamble/Publication-statement/publication-statement.aux
+Reallocating 'name_of_file' (item size: 1) to 53 items.
 A level-1 auxiliary file: Preamble/Contributing-papers/contributing-papers.aux
+Reallocating 'name_of_file' (item size: 1) to 35 items.
 A level-1 auxiliary file: Preamble/Dedication/dedication.aux
+Reallocating 'name_of_file' (item size: 1) to 45 items.
 A level-1 auxiliary file: Preamble/Acknowledgement/acknowledgement.aux
+Reallocating 'name_of_file' (item size: 1) to 31 items.
 A level-1 auxiliary file: Preamble/Abstract/abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 41 items.
 A level-1 auxiliary file: Preamble/Abbreviations/abbreviations.aux
+Reallocating 'name_of_file' (item size: 1) to 39 items.
 A level-1 auxiliary file: Chapters/Introduction/introduction.aux
+Reallocating 'name_of_file' (item size: 1) to 49 items.
 A level-1 auxiliary file: Chapters/Literature-Review/Literature-Review.aux
-A level-1 auxiliary file: Chapters/General/generaldiscussion.aux
-A level-1 auxiliary file: Chapters/General/generalconclusions.aux
+Reallocating 'name_of_file' (item size: 1) to 37 items.
 A level-1 auxiliary file: Chapters/FutureWorks/futureworks.aux
+Reallocating 'name_of_file' (item size: 1) to 19 items.
+Reallocating 'name_of_file' (item size: 1) to 25 items.
 A level-1 auxiliary file: Appendices/appendixA.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
 A level-1 auxiliary file: Appendices/appendixB.aux
 I found no \citation commands---while reading file thesis.aux
 Database file #1: References/library.bib
+You've used 0 entries,
+            2481 wiz_defined-function locations,
+            562 strings with 4860 characters,
+and the built_in function-call counts, 34 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 11
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 8
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 7
 (There was 1 error message)
